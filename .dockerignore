@@ -1,0 +1,6 @@
+.venv/
+create_venv.ps1
+*.html
+*.ipynb
+*.pdf
+*.ps1

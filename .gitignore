@@ -1,0 +1,5 @@
+*.venv*
+*.csv
+*__pycache__*
+*.pdf
+build_container.ps1
