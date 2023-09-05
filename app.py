@@ -109,7 +109,7 @@ def render_tab_content(active_tab):
         dbc.Row(html.H2(f"Model: {filename_to_string[active_tab]}")),
         html.Br(),
         dbc.Row([dbc.Col(html.H3(f"Metrics Curves by Threshold")), dbc.Col(html.H3("Confusion Matrix"))]),
-        dbc.Row([dbc.Col(dcc.Graph(figure=metrics_fig)), dbc.Col(dcc.Graph(figure=cm_fig))]),
+        dbc.Row([dbc.Col(dcc.Graph(figure=metrics_fig), width=6), dbc.Col(dcc.Graph(figure=cm_fig), width=6)]),
         html.Br(),
         dbc.Row(html.H3(f"Best F1 Threshold:")),
         dbc.Row(html.P(f"{round(opt_threshold, 2)}")),
@@ -141,4 +141,5 @@ def render_tab_content(active_tab):
     ])
 
 if __name__ == "__main__":
-    app.run_server(host='0.0.0.0', port=8080, debug=False)
+    app.run_server(host='0.0.0.0', port=8080, debug=True)
+    

@@ -28,8 +28,8 @@ def plot_metrics_by_threshold_app(cv_scores_grouped):
     )
     
     fig.update_layout(
-        height=600,
-        width=600,
+        height=500,
+        width=500,
         xaxis_title='Threshold',
         yaxis_title='Score',
         legend_title='Metric',
@@ -63,8 +63,8 @@ def plot_confusion_matrix_app(cm, class_names):
     fig.update_layout(
         xaxis=dict(title='Predicted labels'),
         yaxis=dict(title='True labels'),
-        width=600,
-        height=600,
+        width=500,
+        height=500,
         margin=dict(l=20, r=20, t=20, b=20)
     )
 
